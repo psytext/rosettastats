@@ -14,5 +14,5 @@ T-TEST
 ## R
 
 ```r
-meanDiff(dependentVariable, dichotomousVariable)
+meanDiff(dat$dependentVariable, dat$dichotomousVariable)
 ```
