@@ -20,5 +20,5 @@ fanova(dat,
        y = c('dependentVariable_t0',
              'dependentVariable_t1',
              'dependentVariable_t2'),
-       between = groupingVariable)
+       between = 'groupingVariable')
 ```
