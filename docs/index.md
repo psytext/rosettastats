@@ -18,13 +18,19 @@ Univariate analyses are analyses of only one variable, for example to inspect di
 
 ## Bivariate analyses
 
-- [Compute a correlation](correlation.html)
-- [Compare the means of two independent groups](independent-t-test.html)
-- [Compare the means of three or more independent groups](oneway-anova.html)
+Bivariate analyses are analyses of associations between two variables.
+
+- Two continuous variables: [correlation](correlation.html) and [regression](regression-single.html)
+- One dichotomous variable, one continuous variable: [independent-samples t-test](t-test-independent.html)
+- One categorical variable, one continuous variable: [oneway analysis of variance](anova-oneway.html)
+- Two categorical variables: [crosstable](crosstab.html)
 
 ## Multivariate analyses
 
-- [Factorial analysis of variance](factorial-anova.html)
-- [Repeated measures analysis of variance](repeated-measures-anova.html)
+Multivariate analyses involve more than two variables.
+
+- [Regression analysis](regression-multiple.html)
+- [Factorial analysis of variance](anova-factorial.html)
+- [Repeated measures analysis of variance](anova-repeated-measures.html)
 
 <!-- ## Intensive longitudinal analyses -->

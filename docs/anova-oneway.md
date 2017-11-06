@@ -1,6 +1,6 @@
 # Oneway anova
 
-To compare the means in three or more independent groups, oneway analysis of variance is normally computed. In this example, a dataset/dataframe called `dat` contains a categorical variable `groupingVariable` and a continuous variable `dependentVariable`.
+To compare the means in three or more independent groups, oneway analysis of variance can be used. In this example, a dataset/dataframe called `dat` contains a categorical variable `groupingVariable` and a continuous variable `dependentVariable`.
 
 ## SPSS
 

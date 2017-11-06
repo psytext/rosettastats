@@ -1,6 +1,6 @@
 # Factorial anova
 
-To compare the means in multiple groups defined by multiple categorical predictors (i.e. factors), factorial analysis of variance is normally used. In this example, a dataset/dataframe called `dat` contains categorical variables `groupingVariable` and `dichotomousVariable` and a continuous variable `dependentVariable`.
+To compare the means in multiple groups defined by multiple categorical predictors (i.e. factors), factorial analysis of variance can be used. In this example, a dataset/dataframe called `dat` contains categorical variables `groupingVariable` and `dichotomousVariable` and a continuous variable `dependentVariable`.
 
 ## SPSS
 
