@@ -1,6 +1,6 @@
 # Recoding a variable
 
-Recoding is the task of changing values of a variable to other values. In this example, variable `x` is recoded and the new variable is stored in `x_new`. This variable is assume to exist in a dataset (dataframe in R) called `dat`. Variable `x` has five possible values: 1, 2, 3, 4 and 5. This recoding command inverses the variable (i.e. 5 becomes 1, 4 becomes 2, 3 stays the same, 2 becomes 4, and 1 becomes 5).
+Recoding is the task of changing values of a variable to other values. In this example, variable `x` is recoded and the new variable is stored in `x_new`. This variable is assumed to exist in a dataset (dataframe in R) called `dat`. Variable `x` has five possible values: 1, 2, 3, 4 and 5. This recoding command inverses the variable (i.e. 5 becomes 1, 4 becomes 2, 3 stays the same, 2 becomes 4, and 1 becomes 5).
 
 ## SPSS
 
