@@ -1,17 +1,17 @@
 # Descriptives
 
-Descriptives are statistics that briefly summarize data series. These examples show how to order descriptives for a variable called `y` in a dataset/dataframe called `dat`.
+Descriptives are statistics that briefly summarize data series. These examples show how to order descriptives for a variable called `dependentVariable` in a dataset/dataframe called `dat`.
 
 ## SPSS
 
 ```
 DATASET ACTIVATE dat.
-EXAMINE VARIABLES=y
+EXAMINE VARIABLES=dependentVariable
   /PLOT = Boxplot Histogram.
 ```
 
 ## R
 
 ```r
-examine(dat$y);
+examine(dat$dependentVariable);
 ```

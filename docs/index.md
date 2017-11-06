@@ -14,11 +14,11 @@ Before analyses can be conducted, it is sometimes necessary to perform some prep
 Univariate analyses are analyses of only one variable, for example to inspect distributions or frequencies.
 
 - [Descriptives](descriptives.html)
-- Descriptives split by group
+- [Descriptives split by group](descriptives-by-group.html)
 
 ## Bivariate analyses
 
-- Compare the means of two independent groups
+- [Compare the means of two independent groups](compare-means-in-two-independent-groups.html)
 - Compute a correlation
 
 ## Multivariate analyses
