@@ -14,5 +14,5 @@ EXECUTE.
 
 ```
 require(car);
-dat$x_new <- recode(dat$x, "1=5; 2=4; 3=3; 4=2; 5=1");
+dat$x_new <- Recode(dat$x, "1=5; 2=4; 3=3; 4=2; 5=1");
 ```
