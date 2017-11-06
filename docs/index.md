@@ -18,8 +18,9 @@ Univariate analyses are analyses of only one variable, for example to inspect di
 
 ## Bivariate analyses
 
-- [Compare the means of two independent groups](compare-means-in-two-independent-groups.html)
-- Compute a correlation
+- [Compare the means of two independent groups](independent-t-test.html)
+- [Compute a correlation](correlation.html)
+- [Compare the means of three or more independent groups](oneway-anova.html)
 
 ## Multivariate analyses
 

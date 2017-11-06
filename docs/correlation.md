@@ -1,0 +1,17 @@
+# Correlation
+
+To explore the association between two continuous variables, the correlation coefficient is normally computed. In this example, a dataset/dataframe called `dat` contains two continuous variables, `independentVariable` and `dependentVariable`.
+
+## SPSS
+
+```
+DATASET ACTIVATE dat.
+CORRELATIONS
+  /VARIABLES = independentVariable dependentVariable.
+```
+
+## R
+
+```r
+cor.test(dat$independentVariable, dat$dependentVariable)
+```
