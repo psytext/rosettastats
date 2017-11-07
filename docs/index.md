@@ -39,6 +39,7 @@ In addition, the data have to be loaded (see the dedicated section below).
 
 Before analyses can be conducted, it is sometimes necessary to perform some preprocessing.
 
+- [Transformation](transformation.html);
 - [Recoding a variable](recoding.html)
 
 ## Univariate analyses
@@ -64,5 +65,12 @@ Multivariate analyses involve more than two variables.
 - [Regression analysis](regression-multiple.html)
 - [Factorial analysis of variance](anova-factorial.html)
 - [Repeated measures analysis of variance](anova-repeated-measures.html)
+
+## Moderation and mediation
+
+Moderation and mediation are techniques involving more complicated relationships. Moderation, tested using interaction, means that the causal association between two variables is itself influenced by a third variable. Mediation can be tested in various ways and means that the causal association between two variables occurs through the causal association of the antecedent with the mediator, and a second causal association of the mediator with the consequent.
+
+- Moderation analysis with a continous predictor and a dichotomous moderator using [regression analysis](regression-moderation-dichotomous-predictor.html)
+
 
 <!-- ## Intensive longitudinal analyses -->
