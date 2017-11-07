@@ -4,13 +4,20 @@ Moderation means that the causal association between two variables is itself inf
 
 ## SPSS
 
-Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)).
+Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)). Here this will be called `interactionTerm`. NOte that there is debate on whether the dichotomous predictor should be coded `0` and `1` or `-0.5` and `0.5`: this influences the interpretation of the resulting coefficients.
 
 ```
-DATASET ACTIVATE dat.
+COMPUTE interactionTerm = dichotomousVariable * independentVariable.
+```
+
+The regression can then be conducted:
+
+```
 REGRESSION
   /DEPENDENT dependentVariable
-  /METHOD ENTER independentVariable secondIndependentVariable
+  /METHOD ENTER independentVariable
+                dichotomousVariable
+                interactionTerm
   /STATISTICS COEF CI(95) R ANOVA.
 ```
 
@@ -18,21 +25,21 @@ To order a plot:
 
 ```
 GRAPH
-  /SCATTERPLOT=independentVariable WITH dependentVariable BY secondIndependentVariable.
+  /SCATTERPLOT=independentVariable WITH dependentVariable BY dichotomousVariable.
 ```
-
-Note that this only works if the second variable, `secondIndependentVariable`, is categorical. If it is continuous, it is probably a good idea to create a categorical variable to enable visualisation.
 
 ## R
 
+R creates the interaction term automatically:
+
 ```r
-regr(dependentVariable ~ independentVariable * secondIndependentVariable,
+regr(dependentVariable ~ independentVariable * dichotomousVariable,
      data=dat);
 ```
 
 To also order a plot:
 
 ```r
-regr(dependentVariable ~ independentVariable * secondIndependentVariable,
-     dat=dat, plot=TRUE);
+regr(dependentVariable ~ independentVariable * dichotomousVariable,
+     data=dat, plot=TRUE);
 ```

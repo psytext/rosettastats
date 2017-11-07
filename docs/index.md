@@ -1,7 +1,7 @@
 Rosetta Stats
 =============
 
-This site is meant to illustrate how common analyses can be conducted in a variety of statistical software packages. It was founded mainly to facilitate using SPSS and R in parallel.
+This site is meant to illustrate how common analyses can be conducted in a variety of statistical software packages. It was founded mainly to facilitate using SPSS and R in parallel. It is geared towards application of statistics to psychological science.
 
 ## Important information to read first
 
@@ -39,10 +39,18 @@ In addition, the data have to be loaded (see the dedicated section below).
 
 Before analyses can be conducted, it is sometimes necessary to perform some preprocessing.
 
-- [Transformation](transformation.html);
+- [Transformation](transformation.html) (e.g. means and sums);
 - [Recoding a variable](recoding.html)
 
-## Univariate analyses
+## Validity and reliability
+
+When an operationalisation (e.g. a questionnaire) is applied, its performance can be described in terms of validity (the degree to which the operationalisation measures or manipulates the construct it was designed to measure or manipulate) and reliability (the susceptibility of the measurements accuracy or manipulations effect to random extraneous influences). To explore an operationalisation's validity and reliability, a number of analyses exist.
+
+- [Reliability coefficients](reliability.html)
+- [Exploratory principal components analysis](factor-analysis-pca-exploratory.html)
+- [Exploratory factor analysis](factor-analysis-pfa-exploratory.html)
+
+## Univariate analyses (data screening)
 
 Univariate analyses are analyses of only one variable, for example to inspect distributions or frequencies.
 
