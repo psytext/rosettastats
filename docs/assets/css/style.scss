@@ -3,3 +3,6 @@
 
 @import "{{ site.theme }}";
 
+h1.project-name a, h1.project-name a:hover, h1.project-name a:active, h1.project-name a:visited {
+  color: white;
+}
