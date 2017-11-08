@@ -44,6 +44,7 @@ Before analyses can be conducted, it is sometimes necessary to perform some prep
 
 - [Transformation](transformation.html) (e.g. means and sums);
 - [Recoding a variable](recoding.html)
+- [Standardizing a variable](standardizing.html)
 
 ## Validity and reliability
 
