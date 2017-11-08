@@ -82,7 +82,7 @@ Multivariate analyses involve more than two variables.
 
 Moderation and mediation are techniques involving more complicated relationships. Moderation, tested using interaction, means that the causal association between two variables is itself influenced by a third variable. Mediation can be tested in various ways and means that the causal association between two variables occurs through the causal association of the antecedent with the mediator, and a second causal association of the mediator with the consequent.
 
-- Moderation analysis with a continous predictor and a dichotomous moderator using [regression analysis](regression-moderation-dichotomous-predictor.html)
-
+- Moderation analysis with a continous predictor and a dichotomous moderator using [regression analysis](regression-moderation-dichotomous-moderator.html)
+- Moderation analysis with a continous predictor and a continous moderator using [regression analysis](regression-moderation-continuous-moderator.html)
 
 <!-- ## Intensive longitudinal analyses -->

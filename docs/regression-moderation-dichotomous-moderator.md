@@ -4,7 +4,7 @@ Moderation means that the causal association between two variables is itself inf
 
 ## SPSS
 
-Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)). Here this will be called `interactionTerm`. NOte that there is debate on whether the dichotomous predictor should be coded `0` and `1` or `-0.5` and `0.5`: this influences the interpretation of the resulting coefficients.
+Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)). Here this will be called `interactionTerm`. Note that there is debate on whether the dichotomous predictor should be coded `0` and `1` or `-0.5` and `0.5`: this influences the interpretation of the resulting coefficients.
 
 ```
 COMPUTE interactionTerm = dichotomousVariable * independentVariable.
