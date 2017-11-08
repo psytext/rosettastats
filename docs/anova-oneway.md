@@ -7,14 +7,12 @@ To compare the means in three or more independent groups, oneway analysis of var
 The simplest analysis uses a function called `ONEWAY`:
 
 ```
-DATASET ACTIVATE dat.
 ONEWAY dependentVariable BY groupingVariable.
 ```
 
 However, to obtain an eta^2 effect size, a plot, or to test for equality of variances, the more powerful `UNIVARIATE` function must be used:
 
 ```
-DATASET ACTIVATE dat.
 UNIANOVA dependentVariable BY groupingVariable
   /PRINT=ETASQ HOMOGENEITY
   /PLOT=PROFILE(dependentVariable)

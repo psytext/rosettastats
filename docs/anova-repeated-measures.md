@@ -5,7 +5,6 @@ To compare changes in means over time, repeated measures anova can be used. In t
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 GLM
   /dependentVariable_t0 dependentVariable_t1 dependentVariable_t2
   /WSFACTOR= groupingVariable 3 Simple

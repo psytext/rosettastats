@@ -5,7 +5,6 @@ To compare the means in two independent groups, the t-test for independent group
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 T-TEST
   /VARIABLES= dependentVariable
   /GROUPS=dichotomousVariable(1,2).

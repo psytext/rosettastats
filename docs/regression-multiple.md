@@ -5,7 +5,6 @@ To explore the association between multiple predictors and a continuous dependen
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 REGRESSION
   /DEPENDENT dependentVariable
   /METHOD ENTER independentVariable secondIndependentVariable

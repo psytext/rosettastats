@@ -5,7 +5,6 @@ To explore the association between two continuous variables, the correlation coe
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 CORRELATIONS
   /VARIABLES = independentVariable dependentVariable.
 ```

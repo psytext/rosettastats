@@ -55,6 +55,10 @@ When an operationalisation (e.g. a questionnaire) is applied, its performance ca
 - [Exploratory principal components analysis](factor-analysis-pca-exploratory.html)
 - [Exploratory factor analysis](factor-analysis-pfa-exploratory.html)
 
+## Univariate visualisations (data screening)
+
+- [Histograms](histogram.html)
+
 ## Univariate analyses (data screening)
 
 Univariate analyses are analyses of only one variable, for example to inspect distributions or frequencies.
@@ -63,12 +67,17 @@ Univariate analyses are analyses of only one variable, for example to inspect di
 - [Descriptives split by group](descriptives-by-group.html)
 - [Frequencies](frequencies.html)
 
+## Bivariate visualisations
+
+- [Scatterplots](scatterplot.html)
+
 ## Bivariate analyses
 
 Bivariate analyses are analyses of associations between two variables.
 
 - Two continuous variables: [correlation](correlation.html) and [regression](regression-single.html)
 - One dichotomous variable, one continuous variable: [independent-samples t-test](t-test-independent.html)
+- A continuous variable measured twice: [dependent-samples t-test](t-test-dependent.html)
 - One categorical variable, one continuous variable: [oneway analysis of variance](anova-oneway.html)
 - Two categorical variables: [crosstable](crosstab.html)
 

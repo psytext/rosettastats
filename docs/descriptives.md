@@ -5,7 +5,6 @@ Descriptives are statistics that briefly summarize data series. These examples s
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 EXAMINE VARIABLES=dependentVariable
   /PLOT = Boxplot Histogram.
 ```

@@ -5,7 +5,6 @@ To compare the means in multiple groups defined by multiple categorical predicto
 ## SPSS
 
 ```
-DATASET ACTIVATE dat.
 UNIANOVA dependentVariable BY groupingVariable dichotomousVariable
   /PLOT = PROFILE(groupingVariable * dichotomousVariable)
   /DESIGN = groupingVariable D groupingVariable * dichotomousVariable.
