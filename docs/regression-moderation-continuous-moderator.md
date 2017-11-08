@@ -4,10 +4,12 @@ Moderation means that the causal association between two variables is itself inf
 
 ## SPSS
 
-Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)). Here this will be called `interactionTerm`. Note that this often introduces collinearity, which can be ameliorated by standardizing the predictors first.
+Analysing an interaction in SPSS first requires creating a new variable consisting of the product of the two interacting variables (also see the section on [transformation](transformation.html)). Here this will be called `interactionTerm`. Note that this often introduces collinearity, which can be ameliorated by standardizing the predictors first (also see the section on [standardizing](standardizing.html)).
 
 ```
-COMPUTE interactionTerm = independentVariable * secondIndependentVariable.
+DESCRIPTIVES  VARIABLES = independentVariable secondIndependentVariable
+ /SAVE.
+COMPUTE interactionTerm = ZindependentVariable * ZsecondIndependentVariable.
 ```
 
 The regression can then be conducted:
