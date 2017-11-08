@@ -1,9 +1,9 @@
-Rosetta Stats
-=============
-
 This site is meant to illustrate how common analyses can be conducted in a variety of statistical software packages. It was founded mainly to facilitate using SPSS and R in parallel. It is geared towards application of statistics to psychological science.
 
-## Important information to read first
+<details>
+  <summary>
+    <h2>Important information to read first</h2>
+  </summary>
 
 It can be necessary to execute one or more commands before analyses can be conducted. Instead of repeating those commands in every example, they are provided here.
 
@@ -30,6 +30,10 @@ require('userfriendlyscience');
 ```
 
 In addition, the data have to be loaded (see the dedicated section below).
+
+</details>
+
+-----------------------------
 
 ## Loading data
 
