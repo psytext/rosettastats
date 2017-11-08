@@ -8,7 +8,7 @@ This site is meant to illustrate how common analyses can be conducted in a varie
 
 <h3>SPSS</h3>
 
-<p>Before running commands in SPSS, two things are first required. First, the data have to be loaded (see the dedicated section below). Second, that dataset must be activated. In this example, we will assume the dataset is called <pre style='display:inline'>dat</pre>:</p>
+<p>Before running commands in SPSS, two things are first required. First, the data have to be loaded (see the dedicated section below). Second, that dataset must be activated. In this example, we will assume the dataset is called <code class="highlighter-rouge">dat</code>:</p>
 
 <pre>
 DATASET ACTIVATE dat.
@@ -16,7 +16,7 @@ DATASET ACTIVATE dat.
 
 <h3>R</h3>
 
-<p>Most examples here use an R package called <pre style='display:inline'>userfriendlyscience</pre> because it contains a large number of functions designed to act similar to their SPSS counterparts. This package, therefore, first has to be installed:</p>
+<p>Most examples here use an R package called <code class="highlighter-rouge">userfriendlyscience</code> because it contains a large number of functions designed to act similar to their SPSS counterparts. This package, therefore, first has to be installed:</p>
 
 <pre class="language-r highlighter-rouge">
 install.packages('userfriendlyscience');
