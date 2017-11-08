@@ -2,34 +2,33 @@ This site is meant to illustrate how common analyses can be conducted in a varie
 
 <details>
   <summary>
-    <h2>Important information to read first</h2>
+    <h2 style="display:inline">Important information to read first</h2>
+    <p>It can be necessary to execute one or more commands before analyses can be conducted. Instead of repeating those commands in every example, they are provided here: click to expand this section.</p>
   </summary>
 
-It can be necessary to execute one or more commands before analyses can be conducted. Instead of repeating those commands in every example, they are provided here.
+<h3>SPSS</h3>
 
-### SPSS
+<p>Before running commands in SPSS, two things are first required. First, the data have to be loaded (see the dedicated section below). Second, that dataset must be activated. In this example, we will assume the dataset is called <pre style='display:inline'>dat</pre>:</p>
 
-Before running commands in SPSS, two things are first required. First, the data have to be loaded (see the dedicated section below). Second, that dataset must be activated. In this example, we will assume the dataset is called `dat`:
-
-```
+<pre>
 DATASET ACTIVATE dat.
-```
+</pre>
 
-### R
+<h3>R</h3>
 
-Most examples here use an R package called `userfriendlyscience` because it contains a large number of functions designed to act similar to their SPSS counterparts. This package, therefore, first has to be installed:
+<p>Most examples here use an R package called <pre style='display:inline'>userfriendlyscience</pre> because it contains a large number of functions designed to act similar to their SPSS counterparts. This package, therefore, first has to be installed:</p>
 
-```
+<pre class="language-r highlighter-rouge">
 install.packages('userfriendlyscience');
-```
+</pre>
 
-This only has to happen once: after it has been installed, it will remain available. However, it will still have to be loaded in every R session using:
+<p>This only has to happen once: after it has been installed, it will remain available. However, it will still have to be loaded in every R session using:</p>
 
-```
+<pre class="language-r highlighter-rouge">
 require('userfriendlyscience');
-```
+</pre>
 
-In addition, the data have to be loaded (see the dedicated section below).
+<p>In addition, the data have to be loaded (see the dedicated section below).</p>
 
 </details>
 
