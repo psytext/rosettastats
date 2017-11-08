@@ -28,9 +28,20 @@ RELIABILITY
 The function `scaleStructure` computes coefficient Alpha as well as a number of other coefficients such as Omega and coefficient H:
 
 ```r
-scaleStructure(dat,
-               items=c('item1', 'item2', 'item3',
-                       'item4', 'item5', 'item6',
-                       'item7', 'item8', 'item9',
-                       'item10'));
+reliability(dat,
+            items=c('item1', 'item2', 'item3',
+                    'item4', 'item5', 'item6',
+                    'item7', 'item8', 'item9',
+                    'item10'));
+```
+
+To also order the corrected item-total correlations, as well as the item-corrected scale means, standard deviations, and reliability coefficients, use:
+
+```r
+reliability(dat,
+            items=c('item1', 'item2', 'item3',
+                    'item4', 'item5', 'item6',
+                    'item7', 'item8', 'item9',
+                    'item10'),
+            itemDiagnostics = TRUE);
 ```
