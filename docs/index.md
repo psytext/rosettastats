@@ -34,9 +34,10 @@ require('userfriendlyscience');
 
 -----------------------------
 
-## Loading data
+## Loading data and managing variables
 
 - [Loading data from a file](loading-data-from-file.html)
+- [Renaming variables](renaming-variables.html)
 
 ## Data preprocessing
 
@@ -60,6 +61,7 @@ Univariate analyses are analyses of only one variable, for example to inspect di
 
 - [Descriptives](descriptives.html)
 - [Descriptives split by group](descriptives-by-group.html)
+- [Frequencies](frequencies.html)
 
 ## Bivariate analyses
 
