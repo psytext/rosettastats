@@ -3,7 +3,7 @@ This site is meant to illustrate how common analyses can be conducted in a varie
 <details>
   <summary>
     <h2 style="display:inline">Important information to read first</h2>
-    <p>It can be necessary to execute one or more commands before analyses can be conducted. Instead of repeating those commands in every example, they are provided here: click to expand this section.</p>
+    <p>It can be necessary to execute one or more commands before analyses can be conducted. Instead of repeating those commands in every example, they are provided here. <strong>Click here to expand this section.</strong></p>
   </summary>
 
 <h3>SPSS</h3>
