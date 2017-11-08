@@ -64,7 +64,7 @@ facComAnalysis(dat,
                        'item4', 'item5', 'item6',
                        'item7', 'item8', 'item9',
                        'item10'),
-               rotate='oblimin,
+               rotate='oblimin',
                nfactors = 3);
 ```
 
