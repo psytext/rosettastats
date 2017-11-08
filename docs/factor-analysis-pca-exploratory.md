@@ -66,7 +66,7 @@ facComAnalysis(dat,
                        'item7', 'item8', 'item9',
                        'item10'),
                fm='pca',
-               rotate='varimax,
+               rotate='varimax',
                nfactors = 3);
 ```
 
