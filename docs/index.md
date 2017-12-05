@@ -1,4 +1,4 @@
-This site is meant to illustrate how common analyses can be conducted in a variety of statistical software packages. It was founded mainly to facilitate using SPSS and R in parallel. It is geared towards application of statistics to psychological science.
+This site is meant to illustrate how common analyses can be conducted in a variety of statistical software packages. It was founded mainly to facilitate using SPSS and R in parallel or to facilitate switching from SPSS to R. It is geared towards application of statistics to psychological science.
 
 <details>
   <summary>
