@@ -7,6 +7,11 @@ h1.project-name a, h1.project-name a:hover, h1.project-name a:active, h1.project
   color: white;
 }
 
+details {
+  border: #eff0f1 solid3px;
+  padding: 10px;
+}
+
 summary {
   cursor: pointer;
 }
