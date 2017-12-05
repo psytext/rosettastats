@@ -6,7 +6,7 @@ The common mathematical operators are `+` for addition, `-` for subtraction, `*`
 
 ## SPSS
 
-The command used for applying mathematical operators to one or several variables in SPSS is called `COMPUTE`. It can be used in combination with mathermatical operators:
+The command used for applying mathematical operators to one or several variables in SPSS is called `COMPUTE`. It can be used in combination with mathematical operators:
 
 ```
 COMPUTE newVariable = 2 * dependentVariable.
