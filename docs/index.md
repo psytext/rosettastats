@@ -32,8 +32,6 @@ require('userfriendlyscience');
 
 </details>
 
------------------------------
-
 ## Loading data and managing variables
 
 - [Loading data from a file](loading-data-from-file.html)
