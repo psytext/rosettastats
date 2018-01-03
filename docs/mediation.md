@@ -31,7 +31,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,mediatorVa
 
 ## R
 
-In R the fucntion is called mediationSem, which uses the SEM package Lavaan.
+In R the function is called mediationSem, which uses the SEM package Lavaan.
 The data are in dataset "dat".
 Example 1 is called as follows.
 
