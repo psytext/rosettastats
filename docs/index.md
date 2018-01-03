@@ -99,6 +99,6 @@ Moderation and mediation are techniques involving more complicated relationships
 
 Moderation and mediation are techniques involving more complicated relationships. Mediation can be tested in various ways and means that the causal association between two variables occurs through the causal association of the antecedent with the mediator, and a second causal association of the mediator with the consequent.
 
-- Mediation analysis analysis with a continous or dichtomous predictor and up to three mediators using [mediation analysis](mediation.html)
+- Mediation analysis with a continous or dichtomous predictor and up to three mediators using [mediation analysis](mediation.html)
 
 <!-- ## Intensive longitudinal analyses -->
