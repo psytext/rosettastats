@@ -88,11 +88,17 @@ Multivariate analyses involve more than two variables.
 - [Factorial analysis of variance](anova-factorial.html)
 - [Repeated measures analysis of variance](anova-repeated-measures.html)
 
-## Moderation and mediation
+## Moderation
 
-Moderation and mediation are techniques involving more complicated relationships. Moderation, tested using interaction, means that the causal association between two variables is itself influenced by a third variable. Mediation can be tested in various ways and means that the causal association between two variables occurs through the causal association of the antecedent with the mediator, and a second causal association of the mediator with the consequent.
+Moderation and mediation are techniques involving more complicated relationships. Moderation, tested using interaction, means that the causal association between two variables is itself influenced by a third variable. 
 
 - Moderation analysis with a continous predictor and a dichotomous moderator using [regression analysis](regression-moderation-dichotomous-moderator.html)
 - Moderation analysis with a continous predictor and a continous moderator using [regression analysis](regression-moderation-continuous-moderator.html)
+
+## Mediation
+
+Moderation and mediation are techniques involving more complicated relationships. Mediation can be tested in various ways and means that the causal association between two variables occurs through the causal association of the antecedent with the mediator, and a second causal association of the mediator with the consequent.
+
+- Mediation analysis analysis with a continous or dichtomous predictor and up to three mediators using [mediation analysis](mediation.html)
 
 <!-- ## Intensive longitudinal analyses -->
