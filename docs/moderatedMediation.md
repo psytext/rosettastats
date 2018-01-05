@@ -96,10 +96,11 @@ The output can be put in an object and with for example the `r summary()` functi
 
 ```r
 
-output <- mediationSem(dat = dat, 
+output <- moderatedMediationSem(dat = dat, 
              xvar  ="predictorVariable", 
-             mvars = c("mediatorVariable1","mediatorVariable2","mediatorVariable3"), 
-             yvar  = "dependentVariable") ;
+             mvars = c("mediatorVariable1","mediatorVariable2"), 
+             yvar  = "dependentVariable"
+             xmmod = "moderatorVariable") ;
 
 summary(output);         
              
