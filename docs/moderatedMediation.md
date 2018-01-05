@@ -1,4 +1,4 @@
-# Mediation
+# Moderated mediation
 
 Descriptives are statistics that briefly summarize data series. These examples show how to order descriptives for a variable called `dependentVariable` in a dataset/dataframe called `dat`, where the descriptives are shown separately for each group, designated by variable `groupingVariable`.
 
