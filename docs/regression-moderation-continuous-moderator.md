@@ -25,16 +25,25 @@ REGRESSION
 
 ## R
 
+To standardize the variables, use `scale`:
+
+```r
+dat$independentVariable_standardized <-
+  scale(dat$independentVariable);
+dat$secondIndependentVariable_standardized <-
+  scale(dat$secondIndependentVariable);
+```
+
 R creates the interaction term automatically:
 
 ```r
-regr(dependentVariable ~ independentVariable * secondIndependentVariable,
+regr(dependentVariable ~ independentVariable_standardized * secondIndependentVariable_standardized,
      data=dat);
 ```
 
 To also order a plot:
 
 ```r
-regr(dependentVariable ~ independentVariable * secondIndependentVariable,
+regr(dependentVariable ~ independentVariable_standardized * secondIndependentVariable_standardized,
      data=dat, plot=TRUE);
 ```
