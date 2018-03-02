@@ -110,9 +110,9 @@ Moderation and mediation are techniques involving more complicated relationships
 
 
 
-## Multillevel analysis
+## Multilevel analysis
 
-Multilevel analysis (MLA) is used for the analysis of hierarchical data. Data at the lowest level are clustered in higher levels. An inportant application for MLA is in ESM/EMA data. This type of data are called intensive longitudinal data. Subjects have measurements on mutiple occasions. The occasions are clusters within the subjects.
+Multilevel analysis (MLA) is used for the analysis of hierarchical data. Data at the lowest level are clustered in higher levels. An important application for MLA is in ESM/EMA data. This type of data are called intensive longitudinal data. Subjects have measurements on multiple occasions. The occasions are clustered within the subjects.
 
 - Multilevel analysis using [multilevel analysis](multilevel_analysis.html)
 
