@@ -1,10 +1,10 @@
 # Moderated mediation
 
-Descriptives are statistics that briefly summarize data series. These examples show how to order descriptives for a variable called `dependentVariable` in a dataset/dataframe called `dat`, where the descriptives are shown separately for each group, designated by variable `groupingVariable`.
+Moderation and mediation models can also be combined. The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variables can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models. The R function moderatedMediationSem uses named paramters to distinguish the two models.
 
 ## SPSS
 
-In SPSS the PROCESS macro can be used to analyse a mediation model. This macro can be downloaded from http://www.afhayes.com.
+In SPSS the PROCESS macro can be used to analyse a moderated mediation model. This macro can be downloaded from http://www.afhayes.com.
 The are several mediators possible and also several covariates. 
 Example 1 has one mediator, one moderator of the path from the predictor to the mediator and no covariates.
 
