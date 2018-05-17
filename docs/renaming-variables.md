@@ -15,3 +15,14 @@ RENAME VARIABLES independentVariable =
 names(dat)[names(dat) == 'independentVariable'] <-
   'freshlyRenamedVariable';
 ```
+
+You can also use for example the package "dplyr", which makes the code more intuitive.
+
+## R
+
+```
+require(dplyr)
+
+dat <- rename(dat, freshlyRenamedVariable = independentVariable);
+```
+
