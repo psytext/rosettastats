@@ -1,6 +1,6 @@
 # Moderated mediation
 
-Moderation and mediation models can also be combined. The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variables can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models. The R function moderatedMediationSem uses named paramters to distinguish the two models.
+Moderation and mediation models can also be combined. The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variable can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models. The R function moderatedMediationSem uses named paramters to distinguish the two models.
 
 ## SPSS
 
