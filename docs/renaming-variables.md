@@ -19,7 +19,7 @@ You can also use for example the package "dplyr", which makes the code more intu
 ## R
 
 ```
-require(dplyr)
+require(dplyr);
 
 dat <- rename(dat, newVariable = oldVariable);
 ```
