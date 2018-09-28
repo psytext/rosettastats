@@ -1,12 +1,30 @@
 # Moderated mediation
 
-Moderation and mediation models can also be combined. The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variable can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models. The R function moderatedMediationSem uses named parameters to distinguish the two models.
+Mediation refers to a causal model in which the relation between the predictor and the dependent variable is mediated by one or more other variables ("the mediators). Note that mediation by definition entails strong assumptions regarding causality, which require longitudinal designs and almost always experimental independent manipulation of the predictor (and if possible mediator). 
+Moderation and mediation models can also be combined. The causal path between the predictor and the mediator(s) can be moderated by a moderator. Likewise, the path between the mediators and the dependent variable can be moderated by another moderator. A moderator strengthens or weakens the relation between two variables.
+The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variable can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models.
+In these examples, the dataset/dataframe is called `dat`, the predictor (the first variable in the causal chain) is called `predictorVariable`, the mediators are called `mediatorVariable1`, `mediatorVariable2`, etc. (the intermediate variables in the causal chain), the dependent variable is called `dependentVariable` (the last variable in the causal chain), and covariates are called `covariate1`, `covariate2`, etc.
 
 ## SPSS
 
-In SPSS the PROCESS macro can be used to analyse a moderated mediation model. This macro can be downloaded from http://www.afhayes.com.
-The are several mediators possible and also several covariates. 
-Example 1 has one mediator, one moderator of the path from the predictor to the mediator and no covariates.
+In SPSS the PROCESS macro can be used to analyse a (moderated) mediation model. Version 3 of this macro can be downloaded from http://www.afhayes.com. The SPSS code shown here is based on version 2. Several mediators can be added and also several covariates. A model code must be specified in this version. See Hayes(2013). 
+
+Example 1 has two mediators and no covariates.
+
+```
+PROCESS vars = dependentVariable,
+               predictorVariable,
+               mediatorVariable1,
+               mediatorVariable2
+   / y = dependentVariable
+   / x = predictorVariable
+   / m = mediatorVariable1
+         mediatorVariable2
+   / model = 4.
+
+```
+
+Example 2 has one mediator, one moderator of the path from the predictor to the mediator (the x-m path) and no covariates.
 
 ```
 PROCESS vars = dependentVariable, predictorVariable mediatorVariable, moderatorVariable
@@ -18,7 +36,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable, moderatorV
 
 ```
 
-Example 2 has one mediator, one moderator of the path from the mediator to the dependent variable and two covariates.
+Example 3 has one mediator, one moderator of the path from the mediator to the dependent variable (m-y path) and two covariates.
 
 ```
 PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,moderatorVariable, covariate1 covariate2
@@ -31,7 +49,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,moderatorV
 
 ```
 
-Example 3 has two mediators, two moderators one for each path and two covariates.
+Example 4 has two mediators, two moderators one for each path and two covariates.
 
 ```
 PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,moderatorVariable, covariate1 covariate2
@@ -47,62 +65,74 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,moderatorV
 ## R
 
 In R the function is called moderatedMediationSem, which uses the SEM package Lavaan.
-The data are in dataset "dat".
-Example 1 is called as follows.
+Example 1 is a mediation model with two mediators and without moderator and is called as follows.
 
 ```r
 
 moderatedMediationSem(dat = dat, 
-             yvar  = "dependentVariable",
-             xvar  = "predictorVariable", 
-             mvars = "mediatorVariable", 
-             xmmod = "moderatorVariable");
+                      xvar  ="predictorVariable", 
+                      mvars = c("mediatorVariable1","mediatorVariable2"), 
+                      yvar  = "dependentVariable", );
+```
+
+
+In example 2 a moderator of the x-m path is added to the model, which is called as follows.
+
+```r
+
+moderatedMediationSem(dat = dat, 
+                      yvar  = "dependentVariable",
+                      xvar  = "predictorVariable", 
+                      mvars = "mediatorVariable", 
+                      xmmod = "moderatorVariable");
 ```
 
 It is possible to choose on which variabele (mediators or dependent) the covariates have an assumed effect.
 In this example both covariates have an assumed effect on both the mediators and the dependent variable. Furthermore, the m-y path is moderated.
-Example 2 is called as follows.
-
-```r
-
-moderatedMediationSem(dat = dat, 
-             yvar  = "dependentVariable",
-             xvar  = "predictorVariable", 
-             mvars = "mediatorVariable", 
-             mymod = "moderatorVariable",
-             cmvars = c("covariate1","covariate2"),
-             cyvars = c("covariate1","covariate2") );
-```
-
-In example 3 both x-m and m-y paths are moderated. There are two mediators.
-In this example the covariates have an assumed effect on both the mediators and the dependent variable.
-Furthermore plots that show the simple slopes of the indirect effects are requested.
 Example 3 is called as follows.
 
 ```r
 
 moderatedMediationSem(dat = dat, 
-             yvar  = "dependentVariable", 
-             xvar  ="predictorVariable", 
-             mvars = c("mediatorVariable1","mediatorVariable2"), 
-             xmmod = "moderatorVariable1",
-             mymod = "moderatorVariable2",
-             cmvars = c("covariate1","covariate2"), 
-             cyvars = c("covariate1","covariate2"),
-             plot = TRUE);
+                      yvar  = "dependentVariable",
+                      xvar  = "predictorVariable", 
+                      mvars = "mediatorVariable", 
+                      mymod = "moderatorVariable",
+                      cmvars = c("covariate1","covariate2"),
+                      cyvars = c("covariate1","covariate2") );
 ```
 
-The output can be put in an object and with for example the `r summary()` function the Lavaan output can be inspected.
+In example 4 both x-m and m-y paths are moderated. There are two mediators.
+In this example the covariates have an assumed effect on both the mediators and the dependent variable.
+Furthermore plots that show the simple slopes of the indirect effects are requested.
+Example 4 is called as follows.
+
+```r
+
+moderatedMediationSem(dat = dat, 
+                      yvar  = "dependentVariable", 
+                      xvar  ="predictorVariable", 
+                      mvars = c("mediatorVariable1","mediatorVariable2"), 
+                      xmmod = "moderatorVariable1",
+                      mymod = "moderatorVariable2",
+                      cmvars = c("covariate1","covariate2"), 
+                      cyvars = c("covariate1","covariate2");
+             
+```
+
+The output can be put in an R object and can then be further inspected. The two functions ' print() ' and ' plot() ' are  developped to provide relevant output of this analysis.
+The ' plot() ' function is only relevant when there is moderation, because it shows the simple slopes.
 
 ```r
 
 output <- moderatedMediationSem(dat = dat, 
-             xvar  ="predictorVariable", 
-             mvars = c("mediatorVariable1","mediatorVariable2"), 
-             yvar  = "dependentVariable"
-             xmmod = "moderatorVariable") ;
+                                xvar  ="predictorVariable", 
+                                mvars = c("mediatorVariable1","mediatorVariable2"), 
+                                yvar  = "dependentVariable"
+                                xmmod = "moderatorVariable") ;
 
-summary(output);         
+print(output)
+plot(output);         
              
              
 ```
