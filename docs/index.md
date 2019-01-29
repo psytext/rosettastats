@@ -86,7 +86,7 @@ Multivariate analyses involve more than two variables.
 - [Lineair regression analysis](regression-multiple.html)
 - [Logistic regression analysis](regression-logistic-multiple.html)
 - [Factorial analysis of variance](anova-factorial.html)
-- [Repeated measures analysis of variance](anova-repeated-measures.html)
+- [Repeated measures analysis of variance](anova-repeated-measures.html) (includes split-plot or mixed analysis of variance)
 
 ## Moderation
 

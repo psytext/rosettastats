@@ -1,7 +1,8 @@
 # Moderated mediation
 
 Mediation refers to a causal model in which the relation between the predictor and the dependent variable is mediated by one or more other variables ("the mediators). Note that mediation by definition entails strong assumptions regarding causality, which require longitudinal designs and almost always experimental independent manipulation of the predictor (and if possible mediator). 
-The causal path between the predictor and the mediator(s) can be moderated by a moderator. Likewise, the path between the mediators and the dependent variable can be moderated by another moderator. A moderator strengthens or weakens the relation between two variables.
+Moderation and mediation models can also be combined. The causal path between the predictor and the mediator(s) can be moderated by a moderator. Likewise, the path between the mediators and the dependent variable can be moderated by another moderator. A moderator strengthens or weakens the relation between two variables.
+The path from predictor to mediator can be moderated by a moderator designated as "w", while the path from mediator to dependent variable can be moderated by a moderator designated as "v". The PROCESS macro uses different model numbers to distinguish these models.
 In these examples, the dataset/dataframe is called `dat`, the predictor (the first variable in the causal chain) is called `predictorVariable`, the mediators are called `mediatorVariable1`, `mediatorVariable2`, etc. (the intermediate variables in the causal chain), the dependent variable is called `dependentVariable` (the last variable in the causal chain), and covariates are called `covariate1`, `covariate2`, etc.
 
 ## SPSS
