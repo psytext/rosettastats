@@ -63,7 +63,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1, moderator
 
 ## R
 
-In R the function is called ` gemm `, which uses the package "gemm". At this moment the package can be obtained by running (after installing the package "devtools"):
+In R the function is called `r gemm() `, which is in the package "gemm". At this moment the package can be obtained by running (after installing the package "devtools"):
 
 devtools::install_github("PeterVerboon/gemm");
 library(gemm).
