@@ -7,7 +7,7 @@ In these examples, the dataset/dataframe is called `dat`, the predictor (the fir
 
 ## SPSS
 
-In SPSS the PROCESS macro can be used to analyse a (moderated) mediation model. Version 3 of this macro can be downloaded from http://www.afhayes.com. The SPSS code shown here is based on version 2. Several mediators can be added and also several covariates. A model code must be specified in this version. See Hayes(2013). 
+In SPSS the PROCESS macro can be used to analyse a (moderated) mediation model. Version 3 of this macro can be downloaded from http://www.afhayes.com. The SPSS code shown here is based on version 2. Several mediators can be added and also several covariates. A model code must be specified in this version. See Hayes(2013; 2018). 
 
 Example 1 has two mediators and no covariates.
 
@@ -72,10 +72,10 @@ Example 1 is a mediation model without moderator and with two mediators; this mo
 
 ```r
 
-     gemm(dat = dat, 
-          xvar  ="predictorVariable", 
-          mvars = c("mediatorVariable1","mediatorVariable2"), 
-          yvar  = "dependentVariable", );
+      gemm(dat = dat, 
+           xvar  ="predictorVariable", 
+           mvars = c("mediatorVariable1","mediatorVariable2"), 
+           yvar  = "dependentVariable");
 ```
 
 
@@ -84,9 +84,9 @@ In example 2 a moderator of the x-m path is added to the model and only one medi
 ```r
 
        gemm(dat = dat, 
-            yvar  = "dependentVariable",
             xvar  = "predictorVariable", 
             mvars = "mediatorVariable", 
+            yvar  = "dependentVariable",
             xmmod = "moderatorVariable");
 ```
 
@@ -95,9 +95,9 @@ In model 3 covariates are added. It is possible to choose on which variabele (me
 ```r
 
         gemm(dat = dat, 
-             yvar  = "dependentVariable",
              xvar  = "predictorVariable", 
              mvars = "mediatorVariable", 
+             yvar  = "dependentVariable",
              mymod = "moderatorVariable",
              cmvars = c("covariate1","covariate2"),
              cyvars = c("covariate1","covariate2") );
@@ -110,9 +110,9 @@ Example 4 is called as follows.
 ```r
 
         gemm(dat = dat, 
-             yvar  = "dependentVariable", 
              xvar  ="predictorVariable", 
              mvars = c("mediatorVariable1","mediatorVariable2"), 
+             yvar  = "dependentVariable", 
              xmmod = "moderatorVariable1",
              mymod = "moderatorVariable2",
              cmvars = c("covariate1","covariate2"), 
@@ -128,7 +128,7 @@ Plots are only relevant when there is moderation, because they show the simple s
 output <- gemm(dat = dat, 
                xvar  ="predictorVariable", 
                mvars = c("mediatorVariable1","mediatorVariable2"), 
-               yvar  = "dependentVariable"
+               yvar  = "dependentVariable",
                xmmod = "moderatorVariable") ;
 
 print(output)
