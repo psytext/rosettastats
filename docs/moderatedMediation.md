@@ -63,9 +63,9 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1, moderator
 
 ## R
 
-In R the function is called gemm, which uses the SEM package gemm. At this moment the package can be obtained by running (after installing the package "devtools"):
+In R the function is called ` gemm `, which uses the package "gemm". At this moment the package can be obtained by running (after installing the package "devtools"):
 
-devtools::install_github("PeterVerboon/gemm")
+devtools::install_github("PeterVerboon/gemm");
 library(gemm).
 
 Example 1 is a mediation model without moderator and with two mediators; this model is called as follows.
@@ -120,7 +120,7 @@ Example 4 is called as follows.
              
 ```
 
-The output of the ' moderatedMediationSem ' function can be put in an R object and can then be further inspected. The ' print ' and three ' plot ' functions are  developped to provide relevant output of this analysis.
+The output of the ' gemm ' function can be put in an R object and can then be further inspected. The 'print' and three 'plot' functions are  developped to provide relevant output of this analysis.
 Plots are only relevant when there is moderation, because they show the simple slopes or index of moderated mediation.
 
 ```r
