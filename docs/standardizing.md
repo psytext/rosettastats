@@ -21,3 +21,10 @@ This stores the standardized values in a variable called `standardizedIndependen
 dat$standardizedIndependentVariable <-
   scale(dat$independentVariable);
 ```
+
+In R is also easy to center a variable around its mean. The following command stores the centered values in a variable called `centeredIndependentVariable`:
+
+```
+dat$centeredVariable <-
+  scale(dat$independentVariable, scale = FALSE);
+```
