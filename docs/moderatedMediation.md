@@ -63,78 +63,70 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1, moderator
 
 ## R
 
-In R the function is called `gemm()`, which is in the package `gemm`. At this moment the package can be obtained by running (after installing the package "devtools"):
+In R the function is called `gemm()`, which is in the package `gemm`. At this moment the package can be obtained by running (after installing the package `remotes`, using `install.packages('remotes');`):
 
-devtools::install_github("PeterVerboon/gemm");
-library(gemm).
+```r
+remotes::install_github("PeterVerboon/gemm");
+library(gemm);
+```
 
 Example 1 is a mediation model without moderator and with two mediators; this model is called as follows, The data are in the R object `dat` again.
 
 ```r
-
-      gemm(dat = dat, 
-           xvar  ="predictorVariable", 
-           mvars = c("mediatorVariable1","mediatorVariable2"), 
-           yvar  = "dependentVariable");
+gemm(dat = dat, 
+     xvar  ="predictorVariable", 
+     mvars = c("mediatorVariable1","mediatorVariable2"), 
+     yvar  = "dependentVariable");
 ```
 
 
 In example 2 a moderator of the x-m path is added to the model and only one mediator is used, which is called as follows.
 
 ```r
-
-       gemm(dat = dat, 
-            xvar  = "predictorVariable", 
-            mvars = "mediatorVariable", 
-            yvar  = "dependentVariable",
-            xmmod = "moderatorVariable");
+gemm(dat = dat, 
+     xvar  = "predictorVariable", 
+     mvars = "mediatorVariable", 
+     yvar  = "dependentVariable",
+     xmmod = "moderatorVariable");
 ```
 
 In model 3 covariates are added. It is possible to choose on which variabele (mediators or dependent) the covariates have an assumed effect. In this example both covariates have an assumed effect on both the mediators and the dependent variable. Furthermore, the m-y path is moderated. Example 3 is called as follows.
 
 ```r
-
-        gemm(dat = dat, 
-             xvar  = "predictorVariable", 
-             mvars = "mediatorVariable", 
-             yvar  = "dependentVariable",
-             mymod = "moderatorVariable",
-             cmvars = c("covariate1","covariate2"),
-             cyvars = c("covariate1","covariate2") );
+gemm(dat = dat, 
+     xvar  = "predictorVariable", 
+     mvars = "mediatorVariable", 
+     yvar  = "dependentVariable",
+     mymod = "moderatorVariable",
+     cmvars = c("covariate1","covariate2"),
+     cyvars = c("covariate1","covariate2") );
 ```
 
-In example 4 both x-m and m-y paths are moderated. There are two mediators.
-In this example the covariates have an assumed effect on both the mediators and the dependent variable.
-Example 4 is called as follows.
+In example 4 both x-m and m-y paths are moderated. There are two mediators. In this example the covariates have an assumed effect on both the mediators and the dependent variable. Example 4 is called as follows.
 
 ```r
-
-        gemm(dat = dat, 
-             xvar  ="predictorVariable", 
-             mvars = c("mediatorVariable1","mediatorVariable2"), 
-             yvar  = "dependentVariable", 
-             xmmod = "moderatorVariable1",
-             mymod = "moderatorVariable2",
-             cmvars = c("covariate1","covariate2"), 
-             cyvars = c("covariate1","covariate2");
-             
+gemm(dat = dat, 
+     xvar  ="predictorVariable", 
+     mvars = c("mediatorVariable1","mediatorVariable2"), 
+     yvar  = "dependentVariable", 
+     xmmod = "moderatorVariable1",
+     mymod = "moderatorVariable2",
+     cmvars = c("covariate1","covariate2"), 
+     cyvars = c("covariate1","covariate2");
 ```
 
-The output of the ' gemm ' function can be put in an R object and can then be further inspected. The 'print' and three 'plot' functions are  developped to provide relevant output of this analysis.
-Plots are only relevant when there is moderation, because they show the simple slopes or index of moderated mediation.
+The output of the `gemm` function can be put in an R object and can then be further inspected. The `print` and three `plot` functions are developed to provide relevant output of this analysis. Plots are only relevant when there is moderation, because they show the simple slopes or index of moderated mediation.
 
 ```r
-
 output <- gemm(dat = dat, 
                xvar  ="predictorVariable", 
-               mvars = c("mediatorVariable1","mediatorVariable2"), 
+               mvars = c("mediatorVariable1", "mediatorVariable2"), 
                yvar  = "dependentVariable",
-               xmmod = "moderatorVariable") ;
+               xmmod = "moderatorVariable");
 
 print(output)
-plotIMM(output)         
-plotSS(output)             
-             
+plotIMM(output);
+plotSS(output);
 ```
 
 
