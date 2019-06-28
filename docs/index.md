@@ -55,6 +55,7 @@ When an operationalisation (e.g. a questionnaire) is applied, its performance ca
 
 ## Univariate visualisations (data screening)
 
+- [Boxplot](boxplot.html)
 - [Histograms](histogram.html)
 
 ## Univariate analyses (data screening)
