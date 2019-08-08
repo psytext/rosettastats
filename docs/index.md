@@ -104,7 +104,7 @@ See Moderated mediation.
 
 ## Moderated mediation
 
-Moderation and mediation are techniques involving complicated relationships. Mediation refers to the situation that the causal association between two variables occurs through the causal association of the antecedent (predictor) with the mediator, and a second causal association of the mediator with the consequent (dependent variable). Moderation, tested using interaction, means that the causal association between two variables is itself influenced by a third variable. Each causal path can be moderated by a continous or dichotomous variable.
+Moderation and mediation are techniques involving complicated relationships. Mediation refers to the situation that the causal association between two variables occurs through the causal association of the antecedent (predictor) with the mediator, and a second causal association of the mediator with the consequent (dependent variable). Moderation, which is tested by using interaction, means that the causal association between two variables is itself influenced by a third variable. Each causal path can be moderated by a continous or dichotomous variable.
 
 - Moderated mediation analysis with a continous or dichtomous predictor and one or two continous or dichtomous moderators (one for each causal path) and m mediators using [moderated mediation analysis](moderatedMediation.html)
 
