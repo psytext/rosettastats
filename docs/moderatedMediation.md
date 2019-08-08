@@ -63,13 +63,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1, moderator
 
 ## R
 
-In R the function is called `gemm()`, which is in the package `gemm`. At this moment the package can be obtained by running (after installing the package `remotes`, using `install.packages('remotes');`):
-
-```r
-remotes::install_github("PeterVerboon/gemm");
-library(gemm);
-```
-
+In R the function is called `gemm()`, which is in the package `rosetta`. A tutorial can be found at: https://www.academia.edu/40039588/Tutorial_of_moderated_mediation_with_SEM_the_gemm_function
 Example 1 is a mediation model without moderator and with two mediators; this model is called as follows, The data are in the R object `dat` again.
 
 ```r
