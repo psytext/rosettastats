@@ -64,7 +64,7 @@ PROCESS vars = dependentVariable, predictorVariable mediatorVariable1,moderatorV
 
 ## R
 
-In R the function is called moderatedMediationSem, which uses the SEM package Lavaan.
+In R the function is called `gemm`, which uses the SEM package Lavaan. A description of this function can be found in this document: https//:github/PeterVerboon/gemm.
 Example 1 is a mediation model with two mediators and without moderator and is called as follows.
 
 ```r
@@ -80,11 +80,11 @@ In example 2 a moderator of the x-m path is added to the model, which is called 
 
 ```r
 
-moderatedMediationSem(dat = dat, 
-                      yvar  = "dependentVariable",
-                      xvar  = "predictorVariable", 
-                      mvars = "mediatorVariable", 
-                      xmmod = "moderatorVariable");
+      gemm(dat = dat, 
+           yvar  = "dependentVariable",
+           xvar  = "predictorVariable", 
+           mvars = "mediatorVariable", 
+           xmmod = "moderatorVariable");
 ```
 
 It is possible to choose on which variabele (mediators or dependent) the covariates have an assumed effect.
@@ -93,13 +93,13 @@ Example 3 is called as follows.
 
 ```r
 
-moderatedMediationSem(dat = dat, 
-                      yvar  = "dependentVariable",
-                      xvar  = "predictorVariable", 
-                      mvars = "mediatorVariable", 
-                      mymod = "moderatorVariable",
-                      cmvars = c("covariate1","covariate2"),
-                      cyvars = c("covariate1","covariate2") );
+      gemm(dat = dat, 
+           yvar  = "dependentVariable",
+           xvar  = "predictorVariable", 
+           mvars = "mediatorVariable", 
+           mymod = "moderatorVariable",
+           cmvars = c("covariate1","covariate2"),
+           cyvars = c("covariate1","covariate2") );
 ```
 
 In example 4 both x-m and m-y paths are moderated. There are two mediators.
@@ -109,14 +109,14 @@ Example 4 is called as follows.
 
 ```r
 
-moderatedMediationSem(dat = dat, 
-                      yvar  = "dependentVariable", 
-                      xvar  ="predictorVariable", 
-                      mvars = c("mediatorVariable1","mediatorVariable2"), 
-                      xmmod = "moderatorVariable1",
-                      mymod = "moderatorVariable2",
-                      cmvars = c("covariate1","covariate2"), 
-                      cyvars = c("covariate1","covariate2");
+      gemm(dat = dat, 
+           yvar  = "dependentVariable", 
+           xvar  ="predictorVariable", 
+           mvars = c("mediatorVariable1","mediatorVariable2"), 
+           xmmod = "moderatorVariable1",
+           mymod = "moderatorVariable2",
+           cmvars = c("covariate1","covariate2"), 
+           cyvars = c("covariate1","covariate2");
              
 ```
 
@@ -125,11 +125,11 @@ The ' plot() ' function is only relevant when there is moderation, because it sh
 
 ```r
 
-output <- moderatedMediationSem(dat = dat, 
-                                xvar  ="predictorVariable", 
-                                mvars = c("mediatorVariable1","mediatorVariable2"), 
-                                yvar  = "dependentVariable"
-                                xmmod = "moderatorVariable") ;
+output <- gemm(dat = dat, 
+               xvar  ="predictorVariable", 
+               mvars = c("mediatorVariable1","mediatorVariable2"), 
+               yvar  = "dependentVariable"
+               xmmod = "moderatorVariable") ;
 
 print(output)
 plot(output);         

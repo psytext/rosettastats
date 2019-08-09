@@ -29,7 +29,7 @@ MIXED dependentVariable WITH predictorVariable indexVariable
 
 ## R
 
-In R the function is called `lmer`, which is in the  package `lme4`. The data are in dataset `dat`. Example 1 is called as follows.
+In R the function is called `lmer`, which is in the  package `lme4`. The data are in dataset `dat`. Example 1 is called as follows. So, make sure to install the `lme4` package first and load it in your R session with `library(lme4)`.
 
 ```r
 
