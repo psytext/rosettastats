@@ -100,10 +100,6 @@ Moderation and mediation are techniques involving more complicated relationships
 
 See Moderated mediation.
 
-<<<<<<< HEAD
-- Mediation analysis with a continous or dichtomous predictor and up to three mediators using [moderated mediation analysis](moderatedMediation.html)
-=======
->>>>>>> f34d5371a08f78b42364cd71f728e6f3b4d27c34
 
 
 ## Moderated mediation
